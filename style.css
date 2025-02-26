@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container{
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    max-height: 550px;
+}
+
+.jessica{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.imageContainer img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer h1{
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 3.7em;
+}
+
+.textContainer .london{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 10px;
+    margin-right: 5.8em;
+}
+
+.textContainer .bio{
+    font-size: 14px;
+    font-weight: 400;
+    line-break: none;
+    word-wrap: normal;  /* Prevents breaking words */
+    overflow-wrap: normal;
+    white-space: normal;
+    margin-right: 3.7em;
+}
+
+.socialLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: -2em;
+}
+
+.socialLinks a{
+    display: block;
+    background: hsl(0, 0%, 20%);
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background 0.3s ease;
+}
+
+.socialLinks a:hover{
+    color: hsl(0, 0%, 8%);
+    background: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+.attribution{
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(75, 94%, 57%);
+}
+
+@media (max-width: 400px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .textContainer h1 {
+      font-size: 22px;
+    }
+  
+    .textContainer .bio {
+      max-width: 100%;
+    }
+}  
